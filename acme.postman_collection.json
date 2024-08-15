@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "463cfe8c-3228-487e-a1c1-4584245462f1",
+		"name": "Acme",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "11565831"
+	},
+	"item": [
+		{
+			"name": "Count Unallocated",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "{{domain}}/api/codes/unallocate/count"
+			},
+			"response": []
+		},
+		{
+			"name": "Allocate Code",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"length\": 6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{domain}}/api/codes/allocate"
+			},
+			"response": []
+		},
+		{
+			"name": "Unallocate Code",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": 11111111\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{domain}}/api/codes/unallocate"
+			},
+			"response": []
+		}
+	]
+}
