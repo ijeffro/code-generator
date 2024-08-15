@@ -19,5 +19,6 @@ class Code extends Model
     protected $fillable = [
         'secret',
         'allocated',
+        'length',
     ];
 }

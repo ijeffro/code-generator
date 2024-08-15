@@ -62,6 +62,7 @@ class CodeGeneratorService extends CodeValidatorService implements CodeGenerator
         return CodeData::from([
             'secret' => $code,
             'allocated' => false,
+            'length' => $length,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -82,6 +83,7 @@ class CodeGeneratorService extends CodeValidatorService implements CodeGenerator
 
             $codes[] = [
                 'secret' => $code->secret,
+                'length' => $length,
                 'allocated' => $code->allocated,
                 'created_at' => $code->createdAt,
                 'updated_at' => $code->updatedAt
