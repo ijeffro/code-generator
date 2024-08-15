@@ -20,6 +20,12 @@ composer require ijeffro/codes:dev-main
 ```php
 php artisan code:setup
 ```
+```php
+php artisan code:generate
+```
+```php
+php artisan code:generate:batch 100
+```
 
 ### Testing
 
