@@ -12,7 +12,7 @@ This is where your description should go. Try and limit it to a paragraph or two
 You can install the package via composer:
 
 ```bash
-composer require ijeffro/codes
+composer require ijeffro/codes:dev-main
 ```
 
 ## Usage
