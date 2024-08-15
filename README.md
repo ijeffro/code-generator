@@ -5,7 +5,7 @@
 <!-- ![GitHub Actions](https://github.com/ijeffro/codes/actions/workflows/main.yml/badge.svg) -->
 [![CircleCI](https://dl.circleci.com/status-badge/img/circleci/WzKp37vepDZvpbZgCsNMbt/PxxLxDUwWMkA9qgJ5QmLiK/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/circleci/WzKp37vepDZvpbZgCsNMbt/PxxLxDUwWMkA9qgJ5QmLiK/tree/main)
 
-The is a code generator for Acme client as per the techincal assesement.
+The is a code generator for Acme client as per the techincal assesement, dopwnload the postman collection to get started.
 
 ## Installation
 
