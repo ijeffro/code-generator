@@ -38,5 +38,10 @@ class GenerateCodeBatchCommand extends Command
             if ($this->option('queue')): return GenerateCodeBatchJob::dispatch($chunk->toArray()); endif;
             return DB::transaction(fn () => Code::query()->upsert($chunk->toArray(), 'secret'));
         });
+
+        
+        return $this->info(trans('code::generator.batch.success', [
+            'amount' => $batchSize
+        ]));
     }
 }

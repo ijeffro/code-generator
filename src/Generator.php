@@ -2,6 +2,7 @@
 
 namespace Ijeffro\Codes;
 
+use Spatie\LaravelData\DataCollection;
 use Ijeffro\Codes\Contracts\GeneratorInterface;
 use Ijeffro\Codes\Services\CodeGeneratorService;
 
@@ -18,9 +19,9 @@ class Generator extends Validator implements GeneratorInterface
     /**
      * The desired code length.
      *
-     * @var array
+     * @var DataCollection
      */
-    public array $codes;
+    public DataCollection $codes;
 
     /**
      * The desired code length.

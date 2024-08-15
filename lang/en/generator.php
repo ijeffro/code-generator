@@ -33,8 +33,8 @@ return [
         ]
 
     ],
-    'create' => [
-        'batch' => []
+    'batch' => [
+        'success' => 'Successfully create :amount new codes.'
     ],
 
     'digits' => 'Number of digits must be greater than zero.',
