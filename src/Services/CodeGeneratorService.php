@@ -84,7 +84,7 @@ class CodeGeneratorService extends CodeValidatorService implements CodeGenerator
             $codes[] = [
                 'secret' => $code->secret,
                 'length' => $length,
-                'allocated' => $code->allocated,
+                'allocated' => false,
                 'created_at' => $code->createdAt,
                 'updated_at' => $code->updatedAt
             ];

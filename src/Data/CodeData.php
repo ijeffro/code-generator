@@ -18,6 +18,7 @@ class CodeData extends Data {
     public function __construct(
         #[Unique(Code::class)]
         public readonly string $secret,
+        public readonly int $length,
         public readonly ?bool $allocated,
         public readonly ?Carbon $createdAt,
         public readonly ?Carbon $updatedAt,
