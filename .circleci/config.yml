@@ -7,7 +7,7 @@ jobs:
   test-php:
     # Install php packages and run tests
     docker:
-      - image: cimg/php:7.4-node
+      - image: cimg/php:8.0-node
     steps:
       - checkout
       - php/install-packages
